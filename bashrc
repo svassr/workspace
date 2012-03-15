@@ -4,6 +4,20 @@ ROOT = '~'
 WORKSPACE_DIR = 'Sites'
 alias ll="ls -laG"
 alias sites="cd ${ROOT}/${WORKSPACE_DIR}/"
+alias tail='tail grc -fn $((${LINES:-12}-2)) -s.1' #Likewise, also more responsive -f
+# alias ls="BLOCK_SIZE=\'1 ls --color=auto" #enable thousands grouping and colour
+# alias minicom='minicom -c on' #enable colour
+# alias cal='cal -3' #show 3 months by default
+# alias units='units -t' #terse mode
+# alias diff='LC_ALL=C TZ=GMT0 diff -Naur' #normalise diffs for distribution
+# alias lynx='lynx -force_html -width=$COLUMNS' #best settings for viewing HTML
+# alias links='links -force-html' #need to enable colour in config menu manually
+# alias xterm='xterm -fb "" -bg black -fg gray -fa "Sans Mono" -fs 9 +sb -sl 3000 -g 80x50+1+1'
+# alias sudo='sudo env PATH=$PATH' #work around sudo built --with-secure-path (ubuntu)
+# alias vim='vim -X' #don't try to contact xserver (which can hang on network issues)
+# alias gdb='gdb -tui -quiet' #enable the text window interface if possible
+# alias head='head -n $((${LINES:-12}-2))' #as many as possible without scrolling
+
 alias matep="mate ${ROOT}/${WORKSPACE_DIR}/\!^"
 
 function hgrep {
